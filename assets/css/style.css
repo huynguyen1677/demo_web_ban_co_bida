@@ -1,0 +1,142 @@
+
+
+*{
+    /* font-family: ; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #8C7B49;
+    --header-color: #BFAF9B;
+    --main-color: #734E38;
+    --background-color: #F2F2F2;
+    --text-color: #0D0D0D;
+}
+
+body {
+    color: var(--text-color);   
+    background: var(--background-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 10px;
+    transition: 0.5s linear;
+    background-color: var(--header-color);
+
+}
+section {
+    padding: 50px 100px;
+}
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+.navbar {
+    display: flex; 
+}
+
+.navbar a {
+    padding: 8px;
+    color: var(--text-color);
+    font-size: 1rem;
+    /* đổi chữ thường thành chữ hoa  */
+    text-transform: uppercase; 
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    background: var(--main-color);
+    /* bo viền */
+    border-radius: 0.2rem;
+    transition: 0.2s all linear; 
+}
+
+.header-icon {
+    font-size: 22px;
+    /* thay đổi hình dạng con trỏ */
+    cursor: pointer;
+    /* cho lên 1000 lớp  */
+    z-index: 1000;
+    display: flex; 
+    /* Khoảng cách giữa các cột */
+    column-gap: 0.8rem;
+}
+ .header-icon .bx{
+    color: var(--text-color);
+ }
+ .header-icon .bx:hover {
+    color: var(--main-color);
+ }
+ #menu-icon{
+    color: var(--text-color);
+    font-size: 24px;
+    z-index: 1000;
+    cursor: pointer;
+    display: none;
+ }
+ .search-box {
+    position: absolute ;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--main-color);
+    width: 100%;
+ }
+ .search-box input {
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1 rem;
+    color: var(--text-color);
+ }
+ .search-box input::placeholder {
+    font-size: 1rem;
+    font-weight: 500;
+ }
+ /* .home {
+    width: 100%;
+    min-width: 100vh;
+    background: url(../img/slider4.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.home-text h1 {
+    font-size: 3.4rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.home-text p {
+    font-size: 0.938rem;
+    color: var(--background-color);
+    margin: 0.5rem 0 1.4rem;
+}
+.btn {
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background-position: var(--main-color);
+    color: var(--background-color);
+    font-weight: 500 ;
+}
+.btn:hover {
+    background: #8a6f4d;
+} */
